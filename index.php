@@ -201,33 +201,25 @@
             
             <div class="plan">
                     <?php
-
+                    $dbconn = parse_url(getenv('DATABASE_URL'));
+                    $path = ltrim($dbconn['path'],'/');
+                    $dsn = "pgsql:host={$dbconn['host']};port={$dbconn['port']};dbname={$path};";
+                    $pdo = new PDO($dsn, $dbconn['user'], $dbconn['pass']);
+                
                             $modal = "<h1>Учебный план</h1><table><thead><tr><td>Индекс</td><td>Наименование</td><td>Учебная нагрузка</td><td>Курс</td><td>Семестр</td><td>Оценка</td></tr></thead><tbody>";
-
-                            $mysqli = new mysqli('localhost', 'root', '', 'portfolio');
-
-                            if ($mysqli->connect_errno) {
-
-                                echo 'Не удалось подключиться к MySQL: (' . $mysqli->connect_errno . ') ' . $mysqli->connect_error;
-
-                            } 
-
-                            $res = $mysqli->query("SELECT * FROM UP ORDER BY UP.Id ASC");
-
-                            while ($row = $res->fetch_assoc()) {
-
+                
+                            $res = $pdo->query("SELECT * FROM UP ORDER BY UP.Id ASC");
+                
+                            foreach ($res as $row){
                                 $modal .= '<tr><td>'.$row['Id'].'</td><td>'.$row['Name'].'</td><td>'.$row['UTime'].'</td><td>'.$row['Cours'].'</td><td>'.$row['Semester'].'</td><td>'.$row['Grade'].'</td></tr>';
-
                             }
 
                             $modal .= "</tbody></table><h1>Практики</h1><table style='margin: auto;'><thead><tr><td>Место прохождения</td><td>Вид практики</td><td>Сроки прохождения</td><td>Оценка</td></tr></thead><tbody>";
 
-                            $res = $mysqli->query("SELECT * FROM Practiki");
-
-                            while ($row = $res->fetch_assoc()) {
-
+                            $res = $pdo->query("SELECT * FROM Practiki");
+                
+                            foreach ($res as $row){
                                 $modal .= '<tr><td>'.$row['Mesto'].'</td><td>'.$row['Vid'].'</td><td>'.$row['Sroki'].'</td><td>'.$row['Grade'].'</td></tr>';
-
                             }
 
                             $modal .= "</tbody></table>";
