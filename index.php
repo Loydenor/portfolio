@@ -208,18 +208,18 @@
                 
                             $modal = "<h1>Учебный план</h1><table><thead><tr><td>Индекс</td><td>Наименование</td><td>Учебная нагрузка</td><td>Курс</td><td>Семестр</td><td>Оценка</td></tr></thead><tbody>";
                 
-                            $res = $pdo->query("SELECT * FROM UP ORDER BY UP.Id ASC");
+                            $res = $pdo->query("SELECT * FROM up ORDER BY up.id ASC");
                 
                             foreach ($res as $row){
-                                $modal .= '<tr><td>'.$row['Id'].'</td><td>'.$row['Name'].'</td><td>'.$row['UTime'].'</td><td>'.$row['Cours'].'</td><td>'.$row['Semester'].'</td><td>'.$row['Grade'].'</td></tr>';
+                                $modal .= '<tr><td>'.$row['id'].'</td><td>'.$row['name'].'</td><td>'.$row['utime'].'</td><td>'.$row['cours'].'</td><td>'.$row['semester'].'</td><td>'.$row['grade'].'</td></tr>';
                             }
 
                             $modal .= "</tbody></table><h1>Практики</h1><table style='margin: auto;'><thead><tr><td>Место прохождения</td><td>Вид практики</td><td>Сроки прохождения</td><td>Оценка</td></tr></thead><tbody>";
 
-                            $res = $pdo->query("SELECT * FROM Practiki");
+                            $res = $pdo->query("SELECT * FROM practiki");
                 
                             foreach ($res as $row){
-                                $modal .= '<tr><td>'.$row['Mesto'].'</td><td>'.$row['Vid'].'</td><td>'.$row['Sroki'].'</td><td>'.$row['Grade'].'</td></tr>';
+                                $modal .= '<tr><td>'.$row['mesto'].'</td><td>'.$row['vid'].'</td><td>'.$row['sroki'].'</td><td>'.$row['grade'].'</td></tr>';
                             }
 
                             $modal .= "</tbody></table>";
