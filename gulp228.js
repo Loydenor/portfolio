@@ -1,0 +1,13 @@
+// JavaScript Document
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
+var watch = require('gulp-watch');
+
+gulp.task('sass_compile', function(){
+        return gulp.src('./scss/**/*.scss')
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error',sass.logError))
+        .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest('./css/'))
+})
