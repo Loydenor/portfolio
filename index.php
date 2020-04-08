@@ -169,17 +169,17 @@
             <ul class="social-links">
                 <li>
                     <a href="https://vk.com/loydenor">
-                        <i class="fa fa-vk"></i>
+                        <img src="img/vk.svg">
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <i class="fa fa-instagram"></i>
+                        <img src="img/instagram.svg">
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <i class="fa fa-discord"></i>
+                        <img src="img/discord.svg">
                     </a>
                 </li>
             </ul>
@@ -473,17 +473,17 @@
             <ul class="social-links">
                 <li>
                     <a href="https://vk.com/loydenor">
-                        <i class="fa fa-vk"></i>
+                        <img src="img/vk.svg">
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <i class="fa fa-instagram"></i>
+                        <img src="img/instagram.svg">
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <i class="fa fa-discord"></i>
+                        <img src="img/discord.svg">
                     </a>
                 </li>
             </ul>
