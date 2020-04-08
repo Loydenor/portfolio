@@ -141,10 +141,9 @@ header {
         font-size: 70px; }
       #services .services-container .services-item .services-description {
         line-height: 1.4em;
-        font-size: 16px; }
+        font-size: 24px; }
       #services .services-container .services-item p {
-        font-family: Raleway,sans-serif;
-        font-size: 18px; }
+        font-family: Raleway,sans-serif; }
     #services .services-container .services-frontend .images {
       color: green; }
     #services .services-container .services-backend .images {
