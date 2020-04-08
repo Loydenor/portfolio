@@ -27,7 +27,7 @@ try {
     $mail->Body = $_POST['message'] . "\nEmail пользователя: " . $_POST['email'] . "\nДанное сообщение было отправленно с https://vinogradovglob.herokuapp.com";
 
     $mail->send();
-    header("Location: index.php");
+    
 } catch (Throwable $tr) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
