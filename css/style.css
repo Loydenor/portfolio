@@ -466,6 +466,13 @@ footer {
     .horizontal-menu ul li a i {
       font-size: 55px; } }
 
+.Eicon {
+  width: 30px;
+  height: 30px; }
+  .Eicon img {
+    width: 100%;
+    height: 100%; }
+
 @media screen and (min-width: 576px) {
   .home .heading p {
     font-size: 25px; }

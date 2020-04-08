@@ -168,17 +168,17 @@
             </div>
             <ul class="social-links">
                 <li>
-                    <a href="https://vk.com/loydenor">
+                    <a href="https://vk.com/loydenor" class="Eicon">
                         <img src="img/vk.svg">
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="" class="Eicon">
                         <img src="img/instagram.svg">
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="" class="Eicon">
                         <img src="img/discord.svg">
                     </a>
                 </li>
@@ -472,18 +472,18 @@
         <footer>
             <ul class="social-links">
                 <li>
-                    <a href="https://vk.com/loydenor">
+                    <a href="https://vk.com/loydenor" class="Eicon">
                         <img src="img/vk.svg">
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="img/instagram.svg">
+                        <img src="img/instagram.svg" class="Eicon">
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="img/discord.svg">
+                        <img src="img/discord.svg" class="Eicon">
                     </a>
                 </li>
             </ul>
