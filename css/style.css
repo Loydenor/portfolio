@@ -304,6 +304,8 @@ header {
     margin: auto; }
   #experience .mySlides {
     padding: 8px 12px; }
+    #experience .mySlides h1 {
+      text-align: center; }
   #experience .mySlides:not(:first-child) {
     display: none; }
   #experience .prev, #experience .next {

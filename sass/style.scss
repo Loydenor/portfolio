@@ -392,6 +392,9 @@ header{
 /* Hide the images by default */
     .mySlides{
         padding: 8px 12px;
+        h1{
+            text-align: center;
+        }
     }
 .mySlides:not(:first-child) {
   display: none;
