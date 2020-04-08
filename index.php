@@ -454,16 +454,16 @@
                     Пожалуйста, оставьте свои контактные данные<br> и сообщение, чтобы я мог с Вами как можно скорее связаться.
                 </p>
                 <div class="name">
-                    <input type="text" placeholder="Ваше имя..." required>
+                    <input type="text" placeholder="Ваше имя..." name="name" required>
                 </div>
                 <div class="email">
-                    <input type="email" placeholder="Ваш email..." required>
+                    <input type="email" placeholder="Ваш email..." name="email" required>
                 </div>
                 <div class="message">
-                    <textarea rows="10" placeholder="Ваше сообщение..." required></textarea>
+                    <textarea rows="10" placeholder="Ваше сообщение..." name="message" required></textarea>
                 </div>
                 <div id="body_button">
-                    <div class="button_hola"><span>Отправить</span></div>
+                    <input type="button" value="Отправить">
                 </div>
             </form>
         </section>
