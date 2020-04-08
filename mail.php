@@ -1,5 +1,5 @@
 <?php
-
+echo 1;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -31,3 +31,4 @@ try {
 } catch (Throwable $tr) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
+echo 2;
