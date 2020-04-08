@@ -449,7 +449,7 @@
                 КОНТАКТЫ
             </h2>
             <div class="underline"></div>
-            <form class="contact-form wow bounceInUp">
+            <form class="contact-form wow bounceInUp" action="Mail.php">
                 <p class="contact-discription">
                     Пожалуйста, оставьте свои контактные данные<br> и сообщение, чтобы я мог с Вами как можно скорее связаться.
                 </p>
