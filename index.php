@@ -16,7 +16,38 @@
         new WOW().init();
         </script>
 </head>
+    <script>
+     var slideIndex = 1;
+        showSlides(slideIndex);
 
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+        console.log(slides);
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+        showSlides(1);
+    </script>
 <body>
 <!--Home-->
     <section class="home" id="home">
@@ -199,40 +230,188 @@
             </h2>
             <div class="underline"></div>
             <!-- Slideshow container -->
-                <div class="slideshow-container">
+                        <div class="slideshow-container">
 
-                  <!-- Full-width images with number and caption text -->
-                  <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>
-                    <img src="img1.jpg" style="width:100%">
-                    <div class="text">Caption Text</div>
-                  </div>
-
-                  <div class="mySlides fade">
-                    <div class="numbertext">2 / 3</div>
-                    <img src="img2.jpg" style="width:100%">
-                    <div class="text">Caption Two</div>
-                  </div>
-
-                  <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>
-                    <img src="img3.jpg" style="width:100%">
-                    <div class="text">Caption Three</div>
-                  </div>
+                          <!-- Full-width images with number and caption text -->
+                            <div class="mySlides fade">
+                              <h1>ПМ.01 Разработка программных модулей
+                            программного обеспечения для компьютерных систем.</h1>
+                            <div class="text-slide">
+                              <h3>Профессиональные компетенции</h3>
+                                <ul>
+                                    <li>
+                                        <span class="title">ПК 1.1.</span>
+                                        Выполнять тестирование программных модулей.
+                                    </li>
+                                    <li>
+                                        <span class="title">ПК 1.2.</span>
+                                        Осуществлять оптимизацию программного кода модуля.
+                                    </li>
+                                    <li>
+                                        <span class="title">ПК 1.3.</span>
+                                        Выполнять разработку спецификаций отдельных компонент.
+                                    </li>
+                                    <li>
+                                            <span class="title">ПК 1.4.</span>
+                                            Выполнять отладку программных модулей с использованием специализированных
+                                            программных средств.
+                                    </li>
+                                    <li>
+                                            <span class="title">ПК 1.5.</span>
+                                            Осуществлять разработку кода программного продукта на основе готовых
+                                            спецификаций на уровне модуля.
+                                    </li>
+                                    <li>
+                                            <span class="title">ПК 1.6.</span>
+                                            Разрабатывать компоненты проектной и технической документации с
+                                            использованием графических языков спецификаций.
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            
+                          </div>
+                            <div class="mySlides fade">
+                              <h1> ПМ.02 Разработка и администрирование баз данных.</h1>
+                            <div class="text-slide">
+                              <h3>Профессиональные компетенции</h3>
+                                <ul>
+                            <li>
+                                <span class="title">ПК 2.1.</span>
+                                Разрабатывать объекты базы данных.
+                            </li>
+                            <li>
+                                <span class="title">ПК 2.2.</span>
+                                Решать вопросы администрирования базы данных.
+                            </li>
+                            <li>
+                                <span class="title">ПК 2.3.</span>
+                                Реализовывать методы и технологии защиты информации в базах данных.
+                            </li>
+                                <li>
+                                    <span class="title">ПК 2.4.</span>
+                                    Реализовывать базу данных в конкретной системе управления базами данных.
+                                </li>
+                        </ul>
+                            </div>
+                            
+                          </div>
+                            <div class="mySlides fade">
+                              <h1>ПМ.03 Участие в интеграции программных модулей.</h1>
+                            <div class="text-slide">
+                              <h3>Профессиональные компетенции</h3>
+                                <ul>
+                            <li>
+                                <span class="title">ПК 3.1.</span>
+                                Разрабатывать технологическую документацию.
+                            </li>
+                            <li>
+                                <span class="title">ПК 3.2.</span>
+                                Выполнять интеграцию модулей в программную систему.
+                            </li>
+                            <li>
+                                <span class="title">ПК 3.3.</span>
+                                Осуществлять разработку тестовых наборов и тестовых сценариев.
+                            </li>
+                                <li>
+                                    <span class="title">ПК 3.4.</span>
+                                    Выполнять отладку программного продукта с использованием специализированных
+                                    программных средств.
+                                </li>
+                                <li>
+                                    <span class="title">ПК 3.5.</span>
+                                    Производить инспектирование компонент программного продукта на предмет
+                                    соответствия стандартам кодирования.
+                                </li>
+                                <li>
+                                    <span class="title">ПК 3.6.</span>
+                                    Анализировать проектную и техническую документацию на уровне взаимодействия
+                                    компонент программного обеспечения.
+                                </li>
+                        </ul>
+                            </div>
+                            
+                          </div>
+                            <div class="mySlides fade">
+                              <h1>ПМ.04 Выполнение работ по одной или нескольким профессиям рабочих, должностям служащих.</h1>
+                            <div class="text-slide">
+                              <h3>Профессиональные компетенции</h3>
+                                <ul>
+                            <li>
+                                <span class="title">ПК 4.1.</span>
+                                Устанавливать и обслуживать программное обеспечение.
+                            </li>
+                            <li>
+                                <span class="title">ПК 4.2.</span>
+                                Обслуживать аппаратное обеспечение персонального компьютера.
+                            </li>
+                            <li>
+                                <span class="title">ПК 4.3.</span>
+                                Осуществлять навигацию по ресурсам, поиск, ввод и передачу данных с помощью технологий и сервисов Интернета.
+                            </li>
+                                <li>
+                                    <span class="title">ПК 4.4.</span>
+                                    Создавать и управлять на персональном компьютере текстовыми документами, таблицами, презентациями и публикациями.
+                                </li>
+                        </ul>
+                            </div>
+                            
+                          </div>
+                            <div class="mySlides fade">
+                              <h1>ПМ.05 Разработка графических и пользовательских интерфейсов.</h1>
+                            <div class="text-slide">
+                              <h3>Профессиональные компетенции</h3>
+                                <ul>
+                            <li>
+                                <span class="title">ПК 5.1.</span>
+                                Производить тестирование и оптимизацию разработанного веб-приложения.
+                            </li>
+                            <li>
+                                <span class="title">ПК 5.2.</span>
+                                Размещать веб приложения в сети в соответствии с техническим заданием.
+                            </li>
+                            <li>
+                                <span class="title">ПК 5.3.</span>
+                                Разрабатывать техническое задание на веб-приложение в соответствии с требованиями заказчика.
+                            </li>
+                                <li>
+                                    <span class="title">ПК 5.4.</span>
+                                    Разрабатывать интерфейс пользователя и веб-приложение в соответствии с техническим заданием.
+                                </li>
+                                <li>
+                                    <span class="title">ПК 5.5.</span>
+                                    Разрабатывать дизайн-концепции веб-приложений в соответствии с корпоративным стилем заказчика.
+                                </li>
+                                <li>
+                                    <span class="title">ПК 5.6.</span>
+                                    Осуществлять разработку дизайна веб-приложения с учетом современных тенденций в области веб-разработки.
+                                </li>
+                                <li>
+                                    <span class="title">ПК 5.7.</span>
+                                    Формировать требования к дизайну веб-приложений на основе анализа предметной области и целевой аудитории.
+                                </li>
+                        </ul>
+                            </div>
+                            <div class="numbertext">5 / 5</div>
 
                   <!-- Next and previous buttons -->
-                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
-
-                <!-- The dots/circles -->
-                <div style="text-align:center">
-                  <span class="dot" onclick="currentSlide(1)"></span>
-                  <span class="dot" onclick="currentSlide(2)"></span>
-                  <span class="dot" onclick="currentSlide(3)"></span>
-                </div>
-            <div class="plan">
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                            <!-- Next and previous buttons -->
+                              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+             <!-- The dots/circles -->
+                    <div style="text-align:center">
+                          <span class="dot" onclick="currentSlide(1)"></span>
+                          <span class="dot" onclick="currentSlide(2)"></span>
+                          <span class="dot" onclick="currentSlide(3)"></span>
+                          <span class="dot" onclick="currentSlide(4)"></span>
+                          <span class="dot" onclick="currentSlide(5)"></span>
+                    </div>
+                    <div class="plan">
                     <?php
                     $dbconn = parse_url(getenv('DATABASE_URL'));
                     $path = ltrim($dbconn['path'],'/');
