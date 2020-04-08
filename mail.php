@@ -1,13 +1,12 @@
 <?php
-echo 1;
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require_once __DIR__ . '/redirect.php';
-require_once __DIR__ . '/../../vendor/autoload.php';
-require_once __DIR__ . '/../../vendor/phpmailer/phpmailer/src/PHPMailer.php';
-require_once __DIR__ . '/../../vendor/phpmailer/phpmailer/src/Exception.php';
-require_once __DIR__ . '/../../vendor/phpmailer/phpmailer/src/SMTP.php';
+require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require_once __DIR__ . '/../vendor/phpmailer/phpmailer/src/Exception.php';
+require_once __DIR__ . '/../vendor/phpmailer/phpmailer/src/SMTP.php';
 
 try {
     $mail = new PHPMailer(true);
@@ -28,9 +27,7 @@ try {
     $mail->Body = $_POST['message'] . "\nEmail пользователя: " . $_POST['email'] . "\nДанное сообщение было отправленно с https://vinogradovglob.herokuapp.com";
 
     $mail->send();
-    
-    $redirect = new Redirect();
-    $redirectURL = $redirect->act("index.php");
+    header("Location: index.php");
 } catch (Throwable $tr) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
