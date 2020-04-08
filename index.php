@@ -463,7 +463,7 @@
                     <textarea rows="10" placeholder="Ваше сообщение..." name="message" required></textarea>
                 </div>
                 <div id="button">
-                    <input type="button" value="Отправить">
+                    <input type="submit" value="Отправить">
                 </div>
             </form>
         </section>
