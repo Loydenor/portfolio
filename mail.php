@@ -20,8 +20,8 @@ try {
     $mail->Debugoutput = 'html';
     $mail->SMTPDebug   = 2;
     $mail->Port        = 587;
-    $mail->Username    = 'Playmaster712@mail.ru';
-    $mail->Password    = 'awpxkldhrseghhoj';
+    $mail->Username    = 'Playmaster712@gmail.ru';
+    $mail->Password    = 'xsnceyycjvewbjjb';
 
     $mail->setFrom($_POST['email']);
     $mail->addAddress('Playmaster712@mail.ru');
