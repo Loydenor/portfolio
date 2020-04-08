@@ -71,7 +71,7 @@
         <div class="header-container col-12 col-sm-12 col-md-11 col-lg-10">
             <div class="header-logo">
                 <a href="#home" class="anchor">
-                    <img alt="logo" class="lazyloaded" src="img/193px-GV_logo.svg.png">
+                    <img alt="logo" class="lazyloaded" src="img/193px-GV_logo.svg.jpg">
                 </a>
             </div>
             
@@ -158,7 +158,7 @@
             </h2>
             <div class="underline"></div>
             <div class="me-photo wow slideInDown">
-                <img alt="face" src="img/face.PNG">
+                <img alt="face" src="img/face.jpg">
             </div>
             <div class="about-text wow bounceInLeft">
                 <h3>Глеб Виноградов</h3>
@@ -192,7 +192,7 @@
             <div class="underline"></div>
             <div class="container-portfolio">
                  <div class="dws wow zoomIn">
-                    <div class="blocImg"><img src="img/portfolio.PNG" alt="CSS эффект">
+                    <div class="blocImg"><img src="img/portfolio.jpg" alt="CSS эффект">
                         <div class="blocText">
                             <div class="text">
                                 <h2>Сайт портфолио</h2>
@@ -202,7 +202,7 @@
                     </div>
                 </div>
                 <div class="dws wow zoomIn">
-                    <div class="blocImg"><img src="img/stepik.PNG" alt="CSS эффект">
+                    <div class="blocImg"><img src="img/stepik.jpg" alt="CSS эффект">
                         <div class="blocText">
                             <div class="text">
                                 <h2>Сертификат stepik</h2>
