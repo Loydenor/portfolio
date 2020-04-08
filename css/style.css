@@ -278,7 +278,16 @@ header {
 
 #experience {
   padding: 50px 0 50px;
-  background: #e7e7e7; }
+  background: #e7e7e7;
+  /* Slideshow container */
+  /* Hide the images by default */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Caption text */
+  /* Number text (1/3 etc) */
+  /* The dots/bullets/indicators */
+  /* Fading animation */ }
   #experience .plan {
     padding: 0 30px; }
     #experience .plan table {
@@ -287,6 +296,74 @@ header {
         font-family: Raleway,sans-serif;
         border: 1px solid #000;
         padding: 10px; }
+  #experience * {
+    box-sizing: border-box; }
+  #experience .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto; }
+  #experience .mySlides {
+    display: none; }
+  #experience .prev, #experience .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none; }
+  #experience .next {
+    right: 0;
+    border-radius: 3px 0 0 3px; }
+  #experience .prev:hover, #experience .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); }
+  #experience .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center; }
+  #experience .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0; }
+  #experience .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease; }
+  #experience .active, #experience .dot:hover {
+    background-color: #717171; }
+  #experience .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
 
 .contact {
   padding: 50px 0 100px;
