@@ -428,7 +428,6 @@ header{
 /* Caption text */
 .text-slide {
   color: #000;
-  font-size: 15px;
   padding: 8px 12px;
   bottom: 8px;
   width: 100%;
@@ -584,6 +583,9 @@ footer{
     }
 }
 @media screen and (min-width: 768px) {
+    .experience .text-slide{
+        font-size: 15px;
+    }
     #services .services-container {
     flex-direction: row;
 }
