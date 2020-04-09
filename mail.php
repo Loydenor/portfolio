@@ -1,4 +1,4 @@
-<?php
+п»ї<?php
 echo 1;
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
@@ -25,8 +25,8 @@ try {
 
     $mail->setFrom($_POST['email']);
     $mail->addAddress('Playmaster712@mail.ru');
-    $mail->Subject = '. Пользователь: ' . $_POST['name'];
-    $mail->Body = $_POST['message'] . "\nEmail пользователя: " . $_POST['email'] . "\nДанное сообщение было отправленно с https://vinogradovglob.herokuapp.com";
+    $mail->Subject = '. РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ: ' . $_POST['name'];
+    $mail->Body = $_POST['message'] . "\nEmail РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: " . $_POST['email'] . "\nР”Р°РЅРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ Р±С‹Р»Рѕ РѕС‚РїСЂР°РІР»РµРЅРЅРѕ СЃ https://vinogradovglob.herokuapp.com";
 
     $mail->send();
     header("Location: ./index.php");
