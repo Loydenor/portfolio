@@ -246,7 +246,6 @@ header{
         text-align: center;
         p{
             font-family: Raleway,sans-serif;
-            font-size: 18px;
         }
     }
     .social-links{
@@ -582,7 +581,15 @@ footer{
         font-family: sans-serif;
     }
 }
+@media screen and (min-width: 375px) {
+    .about .about-text p {
+    font-size: 18px;
+}
+}
 @media screen and (min-width: 768px) {
+    .about .about-text p {
+    font-size: 18px;
+}
     .experience .text-slide{
         font-size: 15px;
     }
@@ -642,6 +649,9 @@ footer{
     }
 }
 @media screen and (min-width: 992px){
+    .about .about-text p {
+    font-size: 24px;
+}
     .slideshow-container .mySlides .text-slide{
         font-size: 24px;
     }

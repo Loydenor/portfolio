@@ -164,8 +164,7 @@ header {
   .about .about-text {
     text-align: center; }
     .about .about-text p {
-      font-family: Raleway,sans-serif;
-      font-size: 18px; }
+      font-family: Raleway,sans-serif; }
   .about .social-links {
     justify-content: center;
     padding: 0 10px 10px;
@@ -446,7 +445,13 @@ footer {
     font-size: 13px;
     font-family: sans-serif; }
 
+@media screen and (min-width: 375px) {
+  .about .about-text p {
+    font-size: 18px; } }
+
 @media screen and (min-width: 768px) {
+  .about .about-text p {
+    font-size: 18px; }
   .experience .text-slide {
     font-size: 15px; }
   #services .services-container {
@@ -482,6 +487,8 @@ footer {
     grid-template-columns: auto auto; } }
 
 @media screen and (min-width: 992px) {
+  .about .about-text p {
+    font-size: 24px; }
   .slideshow-container .mySlides .text-slide {
     font-size: 24px; }
   .plan h1 {
