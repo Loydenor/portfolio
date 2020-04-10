@@ -445,7 +445,8 @@ footer {
   footer .copyright {
     text-align: center;
     font-size: 13px;
-    font-family: sans-serif; }
+    font-family: sans-serif;
+    font-family: Oswald,sans-serif; }
 
 @media screen and (min-width: 375px) {
   .about .about-text p {
